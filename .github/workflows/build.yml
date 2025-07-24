@@ -35,7 +35,7 @@ jobs:
               # Build Dependencies
               "bison"
               "pkg-config"
-              "gcenx/wine/cx-llvm"
+              "https://raw.githubusercontent.com/Gcenx/homebrew-wine/1b2afa7cfa7718d9ea209698f3d1b11f87bba205/Formula/cx-llvm.rb"
 
               # Dependencies
               "freetype"
