@@ -35,7 +35,7 @@ jobs:
               # Build Dependencies
               "bison"
               "pkg-config"
-              "https://raw.githubusercontent.com/Gcenx/homebrew-wine/1b2afa7cfa7718d9ea209698f3d1b11f87bba205/Formula/cx-llvm.rb"
+              "cx-llvm.rb"
 
               # Dependencies
               "freetype"
@@ -48,6 +48,7 @@ jobs:
           )
 
           brew update
+          wget https://raw.githubusercontent.com/Gcenx/homebrew-wine/1b2afa7cfa7718d9ea209698f3d1b11f87bba205/Formula/cx-llvm.rb
           brew install "${REQUIRED_PACKAGES[@]}"
 
       - name: Install mingw
